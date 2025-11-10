@@ -1,0 +1,152 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --page-bg: #ffffff;
+  --card-bg: #ffffff;
+  --text-color: #111827;
+  --muted-color: #6b7280;
+  --primary-color: #2563eb;
+  --border-color: #e5e7eb;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.shell {
+  max-width: 960px;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+
+.page-about main {
+  padding-block: 0 3rem;
+}
+
+.page-about .content-card.content-card--about {
+  margin-top: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding: 2rem 3rem;
+}
+
+.site-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-header .shell {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-block: 1rem;
+}
+
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-right: 5px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--muted-color);
+  padding-block: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.nav-link--active {
+  color: var(--primary-color);
+  font-weight: 600;
+  border-bottom-color: var(--primary-color);
+}
+
+main {
+  padding-block: 2rem 3rem;
+}
+
+.content-card {
+  background-color: var(--card-bg);
+  border-radius: 0.75rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  color: #0f172a;
+}
+
+.page-header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.page-meta {
+  font-size: 0.85rem;
+  color: var(--muted-color);
+  margin-bottom: 0.5rem;
+}
+
+.page-section {
+  margin-top: 1.75rem;
+}
+
+.page-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+ul,
+ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  list-style: underline;
+}
+
+li + li {
+  margin-top: 0.25rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border-color);
+  background-color: #ffffff;
+  padding-block: 1rem;
+  font-size: 0.85rem;
+  color: var(--muted-color);
+  text-align: center;
+}
